@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E17B207B-F5FB-4BDE-ABBE-2901EF28E100}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Documents\Semestre 2022-1\TG\plugins\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DashboardDefinitivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardDefinitivo.Designer.cs">
+      <DependentUpon>DashboardDefinitivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlerta.Designer.cs">
+      <DependentUpon>FormAlerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashCursos.Designer.cs">
+      <DependentUpon>FrmDashCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashProfes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashProfes.Designer.cs">
+      <DependentUpon>FrmDashProfes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicioSesion.Designer.cs">
+      <DependentUpon>FrmInicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuariosTG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuariosTG.Designer.cs">
+      <DependentUpon>FrmUsuariosTG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DashboardDefinitivo.resx">
+      <DependentUpon>DashboardDefinitivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlerta.resx">
+      <DependentUpon>FormAlerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashCursos.resx">
+      <DependentUpon>FrmDashCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashProfes.resx">
+      <DependentUpon>FrmDashProfes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicioSesion.resx">
+      <DependentUpon>FrmInicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuariosTG.resx">
+      <DependentUpon>FrmUsuariosTG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{c81b7841-ec04-4067-ac84-d050a93ffa73}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{2e09de7d-71ed-4ab1-a98a-e3497fb62d43}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
