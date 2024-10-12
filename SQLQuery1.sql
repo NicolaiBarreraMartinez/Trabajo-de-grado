@@ -1,0 +1,1 @@
+select Asignatura, cast(avg(Acumulado)as decimal(10,2)) as Acumulado from VistaMaterias where Acumulado > 1 AND ano =2017																																																																																																																																																																														 group by ASIGNATURA,ANO order by Acumulado;
